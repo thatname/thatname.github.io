@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>racing game</title>
-    <style>
+    <!--<style>
       body {
         font-family: arial;
         margin: 0;
@@ -95,30 +95,30 @@
         font-family: 'Lucida Console', Monaco, monospace;
         outline: none;
       }
-    </style>
+    </style>-->
   </head>
   <body>
   
 
     <div class="spinner" id='spinner'></div>
     <div class="emscripten" id="status">Downloading...</div>
-
+<!--
 <span id='controls'>
   <span><input type="checkbox" id="resize">Resize canvas</span>
   <span><input type="checkbox" id="pointerLock" checked>Lock/hide mouse pointer &nbsp;&nbsp;&nbsp;</span>
   <span><input type="button" value="Fullscreen" onclick="Module.requestFullScreen(document.getElementById('pointerLock').checked, 
                                                                             document.getElementById('resize').checked)">
-  </span>
+  </span>-->
 </span>
 
-    <div class="emscripten">
+    <!--<div class="emscripten">-->
       <progress value="0" max="100" id="progress" hidden=1></progress>
-    </div>
+    <!--</div>-->
 
     
-    <div class="emscripten_border">
-      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
-    </div>
+    <!--<div class="emscripten_border">-->
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" style="position:absolute;left:0;right:0;top:0;bottom:0"></canvas>
+    <!--</div>-->
     <textarea id="output" rows="8"></textarea>
 
     <script type='text/javascript'>
